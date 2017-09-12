@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+</head>
+<body>
+<H2 ALIGN="CENTER">用户注册</H2>
+<form methond="post" action="GetFormTest02">
+<center>
+用户名：
+<input type="text" name="name">
+密码：
+<input type="password" name="password">
+</center>
+你喜欢：
+<label><input type="checkbox" name="hobby" value="篮球">篮球</label>
+<label><input type="checkbox" name="hobby" value="足球">足球</label>
+性别：
+<label><input type="radio" name="sex" value="男">男</label>
+<label><input type="radio" name="sex" value="女">女</label><p>
+你的计算机
+<textarea name="computer" rows=6 cols=64>
+cpu piv 1500
+memory 512m
+</textarea><p>
+你所在地：
+<select name="city">
+<option>北京</option>
+<option>重庆</option>
+<option>杭州</option>
+</select><p>
+<input type="submit" value="提交">
+<input type="reset" value="全部重写">
+</body>
+</html>
