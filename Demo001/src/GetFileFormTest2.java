@@ -40,7 +40,7 @@ public class GetFileFormTest2 extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		MultipartRequest request1=new MultipartRequest(request,"~/");
+		MultipartRequest request1=new MultipartRequest(request,"../");
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out=response.getWriter();
 		Enumeration paramnames=request1.getParameterNames();
@@ -69,5 +69,12 @@ public class GetFileFormTest2 extends HttpServlet {
 		paramName=new String(paramName.getBytes("gbk"),"UTF-8");
 		return paramName;
 	}
+	
+	 protected boolean isParameterNull(String p) {
+		 if(p==null)
+			 return true;
+		 else 
+			 return false;
+	 }
 
 }
